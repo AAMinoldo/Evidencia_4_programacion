@@ -57,14 +57,4 @@ class Impresora:
 
 
 
-if __name__ == "__main__":
-    mi_impresora = Impresora(estado=0, marca="Epson", modelo="Server", tipo="A", conectividad="wifi",
-                             nivel_tinta="medio", paginas_impresas=100, papel_tipo="A4")
 
-    mi_impresora.set_estado(int(input("ingresa una valor: ")))
-
-    print(f"Estado de la impresora: {mi_impresora.estado_de_funcionamiento()}")
-
-
-    mi_impresora.get_estado()
-    mi_impresora.set_estado(100)
